@@ -7,6 +7,9 @@ import { CharactersModule } from './characters/characters.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { LocationsModule } from './locations/locations.module';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     CharactersModule,
     FormsModule,
     HttpClientModule
+    LocationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
