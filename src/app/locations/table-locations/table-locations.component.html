@@ -1,0 +1,32 @@
+<table>
+    <thead>
+        <tr>
+            <th>Nombre del lugar</th>
+            <th>Tipo</th>
+            <th>Dimensión</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                Lugar x
+            </td>
+            <td>
+                Tipo x
+            </td>
+            <td>
+                Dimensión x
+            </td>
+            <td><button>Ver personajes</button></td>
+        </tr>
+        <tr *ngFor="let location of locations">
+            <td> {{location.name}} </td>
+            <td> {{location.type}} </td>
+            <td> {{location.dimension}} </td>
+            <td>
+                <button> Ver personajes del lugar </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
