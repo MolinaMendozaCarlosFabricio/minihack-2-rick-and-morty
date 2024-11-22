@@ -32,4 +32,8 @@ export class characterService {
       imageUrl: character.image,  // Asignar la URL de la imagen al campo imageUrl
     };
   }
+
+  getCharacterByUrl(url: string): Observable<character>{
+    return this.http.get<character>(url);
+  }
 }

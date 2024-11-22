@@ -19,7 +19,7 @@ import { LocationsModule } from './locations/locations.module';
     AppRoutingModule,
     CharactersModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
     LocationsModule
   ],
   providers: [],
