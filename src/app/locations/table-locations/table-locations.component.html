@@ -25,7 +25,7 @@
             <td> {{location.type}} </td>
             <td> {{location.dimension}} </td>
             <td>
-                <button> Ver personajes del lugar </button>
+                <button (click)="redirect_to_view_characters(location.residents)">  Ver personajes del lugar </button>
             </td>
         </tr>
     </tbody>

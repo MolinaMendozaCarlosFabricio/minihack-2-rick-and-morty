@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LocationSerialization } from '../models/location-serialization';
 import { LocationsService } from '../services/locations.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-table-locations',
@@ -12,6 +13,7 @@ export class TableLocationsComponent implements OnInit {
 
   constructor(
     private locationsServices: LocationsService,
+    private router: Router
   ){}
 
   ngOnInit(): void {
@@ -28,5 +30,10 @@ export class TableLocationsComponent implements OnInit {
         console.log("Error:", error);
       }
     );
+  }
+  
+  redirect_to_view_characters(characters: string[]){
+    localStorage.setItem('characters_list', JSON.stringify(characters));
+    this.router.navigate(["/characters"]);
   }
 }
