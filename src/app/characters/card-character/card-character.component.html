@@ -1,1 +1,11 @@
-<p>card-character works!</p>
+<h1>Characters</h1>
+<div *ngFor="let character of characters" class="card">
+    <img [src]="character.imageUrl" [alt]="character.name" class="character-image" />
+    <div class="character-details">
+      <h3>{{ character.name }}</h3>
+      <p><strong>Status:</strong> {{ character.status }}</p>
+      <p><strong>Species:</strong> {{ character.species }}</p>
+      <p><strong>Gender:</strong> {{ character.gender }}</p>
+    </div>
+  </div>
+  
